@@ -2,7 +2,7 @@
 
 **Project Title:** Data-Driven Ingredient Analysis for Recipes
 
-**Student Name:** [Your Name]  
+**Student Name:** Sambhav Gautam and Sambhav Singh 
 **Supervisor:** Dr. Ganesh Bagler  
 **Lab:** Cosylab, IIIT Delhi  
 
