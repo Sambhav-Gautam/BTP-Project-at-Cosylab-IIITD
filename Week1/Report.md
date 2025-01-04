@@ -48,7 +48,7 @@ To initiate the project by developing a pipeline for extracting, cleaning, and a
 ### **Final Results**
 The pie chart generated serves as the final visualization for Week 1. It shows a detailed distribution of the percentage of ingredients mentioned in the instructions across all recipes in the dataset. The chart highlights the variability in ingredient-instruction alignment, with categories ranging from `== 0%` to `> 95%` overlap.
 
-![Detailed Percentage Distribution of Ingredients Found in Instructions](attachment-url:Figure_1.png)
+![Detailed Percentage Distribution of Ingredients Found in Instructions](https://github.com/Sambhav-Gautam/BTP-Project-at-Cosylab-IIITD/blob/main/Week1/Figure_1.png)
 
 ---
 
