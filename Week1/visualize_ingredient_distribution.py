@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 # Load the data from the CSV file
-file_name = "combined_stats.csv"
+file_name = "newdataset.csv"
 df = pd.read_csv(file_name)
 
 # Calculate percentages
