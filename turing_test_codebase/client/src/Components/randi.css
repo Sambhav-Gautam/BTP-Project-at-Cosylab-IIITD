@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sansation');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: auto; /* Allow scroll */
+}
+
+#outer {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  padding: 0;
+}
+
+.recp_name i {
+  font-size: xx-large; 
+}
+
+.bottom_box {
+  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), white; /* Gradient on the upper part */
+  background-size: 100% 50%, 100% 100%; /* Adjust size for gradient */
+  background-position: top, center; /* Position the gradients */
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Fix the position at the bottom */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  height: 100px; /* Adjust the height as needed */
+  padding: 10px 0; /* Add some padding for better spacing */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  z-index: 1000; /* Ensure it stays above other content */
+  animation: animated-gradient 3s ease alternate infinite; /* Animation */
+}
+
+@keyframes animated-gradient {
+  0% {
+    background-position: 0 0, 0 50%; /* Initial positions */
+  }
+  50% {
+    background-position: 100% 0, 0 50%; /* Animated position */
+  }
+  100% {
+    background-position: 0 0, 0 50%; /* Back to original */
+  }
+}
+
+#inner_remaining {
+  flex-grow: 1;
+  overflow: auto; /* Scroll inside this container */
+  padding-bottom: 110px; /* Leave space for the fixed bottom box */
+}
+
+/* Other styles remain unchanged */
+.evaluate {
+  width: 98%;
+  height: 100%;
+  border-radius: 15px;
+  font-family: 'Sansation';
+  font-style: normal;
+  --borderWidth: 5px;
+  position: relative;
+  border-radius: var(--borderWidth);
+  text-align: center;
+  font-size: 20px; /* Adjusted font size to be more reactive */
+}
+
+.evaluate:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: white;
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.evaluate_upper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.evaluate_upper h1 {
+  background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animated-gradient 5s ease infinite;
+  font-size: 2.5em; /* Smaller h1 for responsiveness */
+  margin:auto;
+}
+
+.evaluate ul {
+  
+  list-style: none;
+}
+
+.evaluate ul li {
+  display: inline-block;
+  margin-top: 1%;
+  padding:0.5px;
+}
+
+.progressbar {
+  text-align: center;
+  margin-top: 15px;
+  width: 20%; /* Reduced width for smaller progress bar */
+  padding: 0;
+}
+
+#sbt,
+#skp {
+  border: none;
+  font-family: 'Sansation';
+  font-style: normal;
+  font-size: 20px; /* Adjusted button font size */
+  border: 3px solid black;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #000;
+  width: 200px; /* Reduced button size */
+  height: 40px;
+}
+
+.progressbar li {
+  float: left;
+  list-style: none;
+  width: 16%;
+  position: relative;
+  text-align: center;
+}
+
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  font-size: large; /* Made counter size smaller */
+  width: 40px;
+  height: 40px;
+  border: 3px solid #000000;
+  display: block;
+  border-radius: 50%;
+  line-height: 39px;
+
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.progressbar {
+  counter-reset: step -1; /* Start counting from 0 */
+}
+
+.blurry {
+  opacity: 0.8;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.recp_name {
+  float: right;
+  font-family: 'Sansation';
+  font-style: normal;
+  color: #444444;
+  padding-left: 5%;
+  margin-right: 20px;
+}
+
+.recp_name p {
+  font-size: xxx-large; /* Smaller text */
+}
+
+table {
+  table-layout: fixed;
+  word-wrap: break-word;
+  margin-top: -50px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 1em;
+}
+
+th,
+td {
+  overflow: hidden;
+  font-family: 'Sansation';
+  font-style: normal;
+  width: fit-content;
+  padding-right: 10px;
+  vertical-align: top;
+  font-size: 18px; /* Reduced text size */
+}
+
+td:before {
+  content: '✅ ';
+}
+
+.instructions {
+  padding-left: 5%;
+  line-height: 30px;
+  font-family: 'Sansation';
+  font-style: normal;
+  font-size: 18px; /* Made instructions font size smaller */
+  color: rgb(77, 76, 76);
+}
+
+.instructions li {
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    height: auto; /* Allow content to dictate height */
+    width: 100%;
+    margin: 0;
+    overflow: auto; /* Allow scroll */
+  }
+
+  #ing1 {
+    display: none;
+  }
+  #ing2 {
+    display: inline-block;
+  }
+  .recp_name {
+    float: left;
+  }
+  .recp_name p {
+    font-size: xx-large; /* Adjusted font size for responsiveness */
+  }
+  .instructions {
+    float: left;
+  }
+  .instructions ul {
+    padding: 0;
+    font-size: medium;
+  }
+  .instructions h1 {
+    font-size: large; /* Smaller heading */
+  }
+  #inner_remaining {
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 110px; /* Leave space for the fixed bottom box */
+  }
+  #outer {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding-bottom: 0px;
+  }
+  .evaluate h1 {
+    font-size: auto; 
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .evaluate_upper {
+    flex-flow: column;
+  }
+  .progressbar {
+    width: 55%; /* Progress bar responsiveness */
+  }
+}
+
+::-webkit-scrollbar {
+  height: 6px; /* Adjusted scrollbar size */
+  width: 6px;
+  background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: #000;
+  border-radius: 10px;
+}
+
+/* Container to hold the ingredients table and list */
+.ingredients-container {
+  width: 100%;
+}
+
+/* Default: hide the list, show the table */
+#ing1 {
+  display: table; /* Table visible by default */
+}
+
+#ing2 {
+  display: none; /* List hidden by default */
+}
+
+/* On mobile screens (max-width: 1024px), hide the table and show the list */
+@media screen and (max-width: 1024px) {
+  #ing1 {
+    display: none; /* Hide the table */
+  }
+  
+  #ing2 {
+    display: block; /* Show the list */
+  }
+}
+
+table {
+  width: 100%; /* Make the table take the full width */
+  table-layout: fixed;
+  word-wrap: break-word;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc; /* Add a border to the table cells */
+}
+
+/* Style for the list */
+ul#ing2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul#ing2 li {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.progressbar {
+  display: flex; /* Arrange buttons in a row */
+  background-color: lightgray; /* Background color for the entire bar */
+  padding: 5px; /* Optional: add padding to give space around the buttons */
+  border-radius: 10px; /* Optional: add border radius for rounded corners */
+}
+
+.progressbar li {
+  width: 50px; /* Set width for buttons */
+  height: 50px; /* Set height for buttons */
+  margin: 0; /* Remove margin to eliminate gaps */
+  background: transparent; /* Ensure buttons have a transparent background */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background 0.3s; /* Smooth transition */
+}
+
+.progressbar li.active {
+  transform: scale(1.25); /* Slightly increase size when active */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); Add shadow for effect */
+}
+
+#bt0::before {
+  background-color: #fc1239;
+}
+
+#bt1::before {
+  background-color: #f7756b;
+}
+
+#bt2::before {
+  background-color: #fdde65;
+}
+
+#bt3::before {
+  background-color: #f5f4a0;
+}
+
+#bt4::before {
+  background-color: #7dfb74;
+}
+
+#bt5::before {
+  background-color: #00ff00;
+}
+
+.bottom_box {
+  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), white; /* Gradient on the upper part */
+  background-size: 100% 50%, 100% 100%; /* Adjust size for gradient */
+  display: flex;
+  justify-content: center;
+  position: sticky; /* Change from fixed to relative */
+  margin-top: auto; /* Push it to the bottom */
+  height: auto; /* Adjust the height as needed */
+  padding: 10px 0; /* Add some padding for better spacing */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  z-index: 1000; /* Ensure it stays above other content */
+  animation: animated-gradient 3s ease alternate infinite; /* Animation */
+}
+
+#inner_remaining {
+  flex-grow: 1;
+  overflow: auto; /* Scroll inside this container */
+  padding-bottom: 0; /* No need for padding as the bottom box is now part of the scroll */
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 1024px) {
+  #outer {
+    display: flex;
+    flex-flow: column;
+    height: 100vh; /* Set height to viewport height */
+    padding-bottom: auto; /* Leave space for the bottom box */
+  }
+
+  #inner_remaining {
+    height: calc(100% - 100px); /* Adjust height for inner content to fit the screen */
+  }
+}
+@import url('https://fonts.cdnfonts.com/css/sansation');
+
+.left h1 {
+    margin: 0;
+    font-size: 24px;
+    /* font-family: 'Sansation', sans-serif; Apply the font */
+}
+
+/* Adjusted CSS for Bottom Box */
+.bottom_box {
+  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), white; /* Gradient on the upper part */
+  background-size: 100% 50%, 100% 100%; /* Adjust size for gradient */
+  display: flex;
+  justify-content: center;
+  position: sticky; /* Keep it fixed at the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  height: 33vh; /* Set height to one-third of the viewport height */
+  padding: 10px 0; 
+  bottom: 0;/* Add some padding for better spacing */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  z-index: 1000; /* Ensure it stays above other content */
+  animation: animated-gradient 3s ease alternate infinite; /* Animation */
+}
+
+#inner_remaining {
+  flex-grow: 1;
+  overflow: auto; /* Scroll inside this container */
+  padding-bottom: 0; /* No need for padding as the bottom box is fixed */
+}
+
+/* Media Query for Mobile and Desktop */
+@media screen and (max-width: 1024px) {
+  #outer {
+    display: flex;
+    flex-flow: column;
+    height: 100vh; /* Set height to viewport height */
+    padding-bottom: 33vh; /* Leave space for the bottom box */
+  }
+
+  #inner_remaining {
+    height: calc(100% - 33vh); /* Adjust height for inner content to fit the screen */
+  }
+}
+
+.progressbar {
+  display: flex; /* Use flexbox to arrange buttons in a row */
+  width: 300px; /* Set a fixed width in pixels */
+  background-color: lightgray; /* Background color for the entire progress bar */
+  border-radius: 10px; /* Optional: add border radius for rounded corners */
+  padding: 5px; /* Optional: add padding for spacing */
+  margin: 0 auto; /* Center the progress bar */
+}
+
+
+#outer {
+  display: flex;
+  flex-flow: column;
+  /* height: 100%; Ensure it takes full height */
+  padding: 0;
+}
+
+#inner_remaining {
+  flex-grow: 1; /* Allow it to grow to take available space */
+  overflow: auto; /* Enable scrolling */
+  padding-bottom: 0; /* No padding needed */
+  margin-bottom: auto; /* Leave space for the bottom box on PC */
+}
+
+.bottom_box {
+  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), white; /* Gradient on the upper part */
+  background-size: 100% 50%, 100% 100%; /* Adjust size for gradient */
+  display: flex;
+  justify-content: center;
+  position: sticky; /* Keep it fixed at the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  height: auto; /* Fixed height for PC */
+  padding: 10px 0; /* Add some padding for better spacing */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  z-index: 1000; /* Ensure it stays above other content */
+  animation: animated-gradient 3s ease alternate infinite; /* Animation */
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 1024px) {
+  #inner_remaining {
+    margin-bottom: auto; /* Leave space for the bottom box on mobile */
+  }
+
+  .bottom_box {
+    height: auto; /* Set height to one-third of the viewport height for mobile */
+  }
+
+  #outer {
+    /* height: auto; */
+    bottom:0; /* Use viewport height for flexibility */
+  }
+}
+
+.spacing {
+  margin: 20px 0; /* Adjust the value as needed for spacing */
+}
+
+.ingredients-container {
+  margin-bottom: 20px; /* Space after Ingredients */
+}
+
+.instructions {
+  margin-top: 20px; /* Space before Recipe Instructions */
+}
+
+@media (max-width: 600px) {
+  .ingredients-container {
+      margin-bottom: 15px; /* Space after Ingredients for mobile */
+  }
+
+  .instructions {
+      margin-top: 15px; /* Space before Recipe Instructions for mobile */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Existing styles... */
+
+  /* Adjust margin for ingredients and instructions */
+  .ingredients-container {
+    margin-bottom: 20px; /* Add margin below ingredients */
+  }
+
+  .instructions {
+    margin-top: 20px; /* Add margin above instructions to match spacing */
+  }
+}
+
+.instructions i {
+  font-size: xx-large;
+}
+.recp_name p {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.recp_name i {
+  font-size: x-large; /* Default size for mobile */
+}
+
+/* For screens wider than 768px (you can adjust the breakpoint as needed) */
+@media (min-width: 768px) {
+  .recp_name i {
+      font-size: xx-large; /* Size for PC */
+  }
+}
+
+.instructions i {
+  font-size: x-large; /* Default size for mobile */
+}
+
+/* For screens wider than 768px */
+@media (min-width: 768px) {
+  .instructions i {
+      font-size: xx-large; /* Size for PC */
+  }
+}
+.left h1 {
+  /* font-family: Sansation, sans-serif; */
+  font-size: xx-large; /* Default size for mobile */
+  margin: 0;
+}
+
+/* For screens wider than 768px (you can adjust the breakpoint as needed) */
+@media (min-width: 768px) {
+  .left h1 {
+      font-size: xxx-large; /* Size for PC */
+  }
+}
+.evaluate_upper h1 {
+  margin-bottom: 20px;
+  padding:5px; /* Adjust the value as needed */
+}
+
+li#bt0 {
+  margin: auto;
+}
+
+li#bt1 {
+  margin: auto;
+}
+
+li#bt2 {
+  margin: auto;
+}
+
+li#bt3 {
+  margin: auto;
+}
+
+li#bt4 {
+  margin: auto;
+}
+
+li#bt5 {
+  margin: auto;
+}
