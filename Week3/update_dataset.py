@@ -2,10 +2,10 @@ import pandas as pd
 from pymongo import MongoClient
 from urllib.parse import quote_plus
 
-# MongoDB connection details
+# M# MongoDB connection details
 username = "sambhav22435"
-password = quote_plus("Possible@2003")  # Escapes special characters
-mongo_url = f"mongodb+srv://{username}:{password}@ttc.swhs7.mongodb.net/"
+password = quote_plus("Sambhav@Possible@2003")  # Escapes special characters
+mongo_url = f"mongodb+srv://{username}:{password}@ttc.qg2bq.mongodb.net/"
 database_name = "Turing"  # Use the correct casing
 collection_name = "ttc"
 

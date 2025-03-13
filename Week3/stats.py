@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 # Load the data from the CSV file
-file_name = "ingredients_stats.csv"
+file_name = "ingredients_stats_after_deleting.csv"
 df = pd.read_csv(file_name)
 
 # Calculate the percentage of random ingredients found in "instructions" and "ingredients"

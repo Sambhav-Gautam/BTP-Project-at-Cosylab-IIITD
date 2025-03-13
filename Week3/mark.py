@@ -1,21 +1,9 @@
-import pandas as pd
+import json
 
-# Load the data from the CSV file
-file_name = "ingredients_stats.csv"
-df = pd.read_csv(file_name)
+# Load the filtered recipes from the JSON file
+with open("filtered_recipes.json", "r") as json_file:
+    recipes = json.load(json_file)
 
-# Calculate the percentage of random ingredients found in "ingredients"
-df['Percentage_in_ingredients'] = (df['in_ingredients'] / df['total_ingredients']) * 100
-
-# Filter recipes where Percentage_in_ingredients == 0
-recipes_with_zero_percentage = df[df['Percentage_in_ingredients'] == 0]
-
-# Extract the "Sno" (recipe IDs)
-recipe_ids_with_zero_percentage = recipes_with_zero_percentage[['Sno']]
-
-# Save the result to a new CSV file
-output_file = "recipes_with_zero_percentage.csv"
-recipe_ids_with_zero_percentage.to_csv(output_file, index=False)
-
-# Print the path of the output CSV file
-print(f"Recipe IDs with zero percentage saved to: {output_file}")
+# Count the number of entries
+num_entries = len(recipes)
+print(f"The JSON file contains {num_entries} entries.")

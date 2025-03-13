@@ -1,0 +1,197 @@
+=== Filtering Report for min_f1_threshold = 0.10 ===
+Total Chefs Before Filtering: 29
+Total Chefs After Filtering: 20
+Chefs Removed: ['Aayushri Srivastava', 'Ansh Mittal', 'Fathima Sainudheen', 'Jasleen Kaur', 'Mahek Panjabi', 'Priyanshi Agrawal', 'Rizwan Yargatti', 'Siddharth Bose', 'Soniya Premchandani']
+Global F1 Score Before Filtering: 0.4819
+Global F1 Score After Filtering: 0.4980
+Improvement in Global F1 Score: 0.0161
+Total Recipes Evaluated by Serious Chefs: 2165
+Detailed Removal Reasons:
+   Ansh Mittal: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.1)
+   Rizwan Yargatti: Insufficient evaluations (1 < 5), Low F1 score (0.00 < 0.1), Skewed decision distribution (real_ratio: 0.00, fake_ratio: 1.00 > 0.9)
+   Mahek Panjabi: Low F1 score (0.00 < 0.1)
+   Priyanshi Agrawal: Low F1 score (0.10 < 0.1)
+   Siddharth Bose: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.1)
+   Aayushri Srivastava: Low F1 score (0.00 < 0.1)
+   Soniya Premchandani: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.1)
+   Fathima Sainudheen: Z-score outlier (F1: 0.10 < threshold: 0.13)
+   Jasleen Kaur: Z-score outlier (F1: 0.13 < threshold: 0.13)
+
+============================================================
+
+=== Filtering Report for min_f1_threshold = 0.20 ===
+Total Chefs Before Filtering: 29
+Total Chefs After Filtering: 12
+Chefs Removed: ['Aayushri Srivastava', 'Ansh Mittal', 'Bhumii Sharma', 'Fathima Sainudheen', 'Jasleen Kaur', 'Kruti Anegundi', 'Mahek Panjabi', 'Meet Shah', 'Prem Gujar', 'Priyanshi Agrawal', 'Rishita Godre', 'Rizwan Yargatti', 'Sanjana Sapkal', 'Siddharth Bose', 'Soniya Premchandani', 'Tanay Jounjat', 'loboangel moses']
+Global F1 Score Before Filtering: 0.4819
+Global F1 Score After Filtering: 0.5217
+Improvement in Global F1 Score: 0.0398
+Total Recipes Evaluated by Serious Chefs: 1952
+Detailed Removal Reasons:
+   Ansh Mittal: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.2)
+   Rizwan Yargatti: Insufficient evaluations (1 < 5), Low F1 score (0.00 < 0.2), Skewed decision distribution (real_ratio: 0.00, fake_ratio: 1.00 > 0.9)
+   Tanay Jounjat: Low F1 score (0.19 < 0.2)
+   Mahek Panjabi: Low F1 score (0.00 < 0.2)
+   Fathima Sainudheen: Low F1 score (0.10 < 0.2)
+   loboangel moses: Low F1 score (0.15 < 0.2)
+   Meet Shah: Low F1 score (0.17 < 0.2)
+   Rishita Godre: Low F1 score (0.16 < 0.2)
+   Prem Gujar: Low F1 score (0.14 < 0.2)
+   Kruti Anegundi: Low F1 score (0.15 < 0.2)
+   Priyanshi Agrawal: Low F1 score (0.10 < 0.2)
+   Jasleen Kaur: Low F1 score (0.13 < 0.2)
+   Siddharth Bose: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.2)
+   Aayushri Srivastava: Low F1 score (0.00 < 0.2)
+   Soniya Premchandani: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.2)
+   Bhumii Sharma: Z-score outlier (F1: 0.20 < threshold: 0.25)
+   Sanjana Sapkal: Z-score outlier (F1: 0.20 < threshold: 0.25)
+
+============================================================
+
+=== Filtering Report for min_f1_threshold = 0.30 ===
+Total Chefs Before Filtering: 29
+Total Chefs After Filtering: 6
+Chefs Removed: ['Aayushri Srivastava', 'Ansh Mittal', 'Bhumii Sharma', 'Devyani. Dangat', 'Fathima Sainudheen', 'Japtej Singh', 'Jasleen Kaur', 'Krishi Chawla', 'Kruti Anegundi', 'Mahek Panjabi', 'Meet Shah', 'Prem Gujar', 'Priyanshi Agrawal', 'Rishita Godre', 'Rizwan Yargatti', 'Sakshi Dahiphale', 'Sanjana Sapkal', 'Siddharth Bose', 'Soniya Premchandani', 'Tanay Jounjat', 'Videesha Sawane', 'loboangel moses', 'yashi yashi']
+Global F1 Score Before Filtering: 0.4819
+Global F1 Score After Filtering: 0.5578
+Improvement in Global F1 Score: 0.0759
+Total Recipes Evaluated by Serious Chefs: 1566
+Detailed Removal Reasons:
+   Ansh Mittal: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.3)
+   Rizwan Yargatti: Insufficient evaluations (1 < 5), Low F1 score (0.00 < 0.3), Skewed decision distribution (real_ratio: 0.00, fake_ratio: 1.00 > 0.9)
+   Tanay Jounjat: Low F1 score (0.19 < 0.3)
+   Mahek Panjabi: Low F1 score (0.00 < 0.3)
+   Fathima Sainudheen: Low F1 score (0.10 < 0.3)
+   loboangel moses: Low F1 score (0.15 < 0.3)
+   Bhumii Sharma: Low F1 score (0.20 < 0.3)
+   Meet Shah: Low F1 score (0.17 < 0.3)
+   Krishi Chawla: Low F1 score (0.26 < 0.3)
+   Rishita Godre: Low F1 score (0.16 < 0.3)
+   Prem Gujar: Low F1 score (0.14 < 0.3)
+   Kruti Anegundi: Low F1 score (0.15 < 0.3)
+   Priyanshi Agrawal: Low F1 score (0.10 < 0.3)
+   Videesha Sawane: Low F1 score (0.27 < 0.3)
+   Jasleen Kaur: Low F1 score (0.13 < 0.3)
+   Sanjana Sapkal: Low F1 score (0.20 < 0.3)
+   Siddharth Bose: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.3)
+   yashi yashi: Low F1 score (0.27 < 0.3)
+   Aayushri Srivastava: Low F1 score (0.00 < 0.3)
+   Soniya Premchandani: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.3)
+   Sakshi Dahiphale: Z-score outlier (F1: 0.34 < threshold: 0.39)
+   Japtej Singh: Z-score outlier (F1: 0.36 < threshold: 0.39)
+   Devyani. Dangat: Z-score outlier (F1: 0.38 < threshold: 0.39)
+
+============================================================
+
+=== Filtering Report for min_f1_threshold = 0.40 ===
+Total Chefs Before Filtering: 29
+Total Chefs After Filtering: 4
+Chefs Removed: ['Aayushri Srivastava', 'Ansh Mittal', 'Bhumii Sharma', 'Bikram Badh', 'Devyani. Dangat', 'Fathima Sainudheen', 'Japtej Singh', 'Jasleen Kaur', 'Krishi Chawla', 'Kruti Anegundi', 'Mahek Panjabi', 'Meet Shah', 'Naman Jaswani', 'Prem Gujar', 'Priyanshi Agrawal', 'Rishita Godre', 'Rizwan Yargatti', 'Sakshi Dahiphale', 'Sanjana Sapkal', 'Siddharth Bose', 'Soniya Premchandani', 'Tanay Jounjat', 'Videesha Sawane', 'loboangel moses', 'yashi yashi']
+Global F1 Score Before Filtering: 0.4819
+Global F1 Score After Filtering: 0.6260
+Improvement in Global F1 Score: 0.1441
+Total Recipes Evaluated by Serious Chefs: 715
+Detailed Removal Reasons:
+   Ansh Mittal: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.4)
+   Rizwan Yargatti: Insufficient evaluations (1 < 5), Low F1 score (0.00 < 0.4), Skewed decision distribution (real_ratio: 0.00, fake_ratio: 1.00 > 0.9)
+   Tanay Jounjat: Low F1 score (0.19 < 0.4)
+   Mahek Panjabi: Low F1 score (0.00 < 0.4)
+   Fathima Sainudheen: Low F1 score (0.10 < 0.4)
+   loboangel moses: Low F1 score (0.15 < 0.4)
+   Bhumii Sharma: Low F1 score (0.20 < 0.4)
+   Meet Shah: Low F1 score (0.17 < 0.4)
+   Krishi Chawla: Low F1 score (0.26 < 0.4)
+   Rishita Godre: Low F1 score (0.16 < 0.4)
+   Prem Gujar: Low F1 score (0.14 < 0.4)
+   Sakshi Dahiphale: Low F1 score (0.34 < 0.4)
+   Kruti Anegundi: Low F1 score (0.15 < 0.4)
+   Priyanshi Agrawal: Low F1 score (0.10 < 0.4)
+   Japtej Singh: Low F1 score (0.36 < 0.4)
+   Videesha Sawane: Low F1 score (0.27 < 0.4)
+   Devyani. Dangat: Low F1 score (0.38 < 0.4)
+   Jasleen Kaur: Low F1 score (0.13 < 0.4)
+   Sanjana Sapkal: Low F1 score (0.20 < 0.4)
+   Siddharth Bose: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.4)
+   yashi yashi: Low F1 score (0.27 < 0.4)
+   Aayushri Srivastava: Low F1 score (0.00 < 0.4)
+   Soniya Premchandani: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.4)
+   Bikram Badh: Z-score outlier (F1: 0.48 < threshold: 0.52)
+   Naman Jaswani: Z-score outlier (F1: 0.51 < threshold: 0.52)
+
+============================================================
+
+=== Filtering Report for min_f1_threshold = 0.50 ===
+Total Chefs Before Filtering: 29
+Total Chefs After Filtering: 4
+Chefs Removed: ['Aayushri Srivastava', 'Ansh Mittal', 'Bhumii Sharma', 'Bikram Badh', 'Devyani. Dangat', 'Fathima Sainudheen', 'Japtej Singh', 'Jasleen Kaur', 'Krishi Chawla', 'Kruti Anegundi', 'Mahek Panjabi', 'Meet Shah', 'Naman Jaswani', 'Prem Gujar', 'Priyanshi Agrawal', 'Rishita Godre', 'Rizwan Yargatti', 'Sakshi Dahiphale', 'Sanjana Sapkal', 'Siddharth Bose', 'Soniya Premchandani', 'Tanay Jounjat', 'Videesha Sawane', 'loboangel moses', 'yashi yashi']
+Global F1 Score Before Filtering: 0.4819
+Global F1 Score After Filtering: 0.6260
+Improvement in Global F1 Score: 0.1441
+Total Recipes Evaluated by Serious Chefs: 715
+Detailed Removal Reasons:
+   Ansh Mittal: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.5)
+   Rizwan Yargatti: Insufficient evaluations (1 < 5), Low F1 score (0.00 < 0.5), Skewed decision distribution (real_ratio: 0.00, fake_ratio: 1.00 > 0.9)
+   Tanay Jounjat: Low F1 score (0.19 < 0.5)
+   Mahek Panjabi: Low F1 score (0.00 < 0.5)
+   Fathima Sainudheen: Low F1 score (0.10 < 0.5)
+   loboangel moses: Low F1 score (0.15 < 0.5)
+   Bhumii Sharma: Low F1 score (0.20 < 0.5)
+   Meet Shah: Low F1 score (0.17 < 0.5)
+   Krishi Chawla: Low F1 score (0.26 < 0.5)
+   Rishita Godre: Low F1 score (0.16 < 0.5)
+   Prem Gujar: Low F1 score (0.14 < 0.5)
+   Sakshi Dahiphale: Low F1 score (0.34 < 0.5)
+   Kruti Anegundi: Low F1 score (0.15 < 0.5)
+   Priyanshi Agrawal: Low F1 score (0.10 < 0.5)
+   Bikram Badh: Low F1 score (0.48 < 0.5)
+   Japtej Singh: Low F1 score (0.36 < 0.5)
+   Videesha Sawane: Low F1 score (0.27 < 0.5)
+   Devyani. Dangat: Low F1 score (0.38 < 0.5)
+   Jasleen Kaur: Low F1 score (0.13 < 0.5)
+   Sanjana Sapkal: Low F1 score (0.20 < 0.5)
+   Siddharth Bose: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.5)
+   yashi yashi: Low F1 score (0.27 < 0.5)
+   Aayushri Srivastava: Low F1 score (0.00 < 0.5)
+   Soniya Premchandani: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.5)
+   Naman Jaswani: Z-score outlier (F1: 0.51 < threshold: 0.56)
+
+============================================================
+
+=== Filtering Report for min_f1_threshold = 0.60 ===
+Total Chefs Before Filtering: 29
+Total Chefs After Filtering: 3
+Chefs Removed: ['Aayushri Srivastava', 'Ansh Mittal', 'Bhumii Sharma', 'Bikram Badh', 'Devyani. Dangat', 'Fathima Sainudheen', 'Japtej Singh', 'Jasleen Kaur', 'Krishi Chawla', 'Kruti Anegundi', 'Mahek Panjabi', 'Meet Shah', 'Naman Jaswani', 'Prem Gujar', 'Priyanshi Agrawal', 'Rishita Godre', 'Ritu Ganthade', 'Rizwan Yargatti', 'Sakshi Dahiphale', 'Sanjana Sapkal', 'Siddharth Bose', 'Soniya Premchandani', 'Tanay Jounjat', 'Videesha Sawane', 'loboangel moses', 'yashi yashi']
+Global F1 Score Before Filtering: 0.4819
+Global F1 Score After Filtering: 0.6640
+Improvement in Global F1 Score: 0.1821
+Total Recipes Evaluated by Serious Chefs: 236
+Detailed Removal Reasons:
+   Ansh Mittal: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.6)
+   Rizwan Yargatti: Insufficient evaluations (1 < 5), Low F1 score (0.00 < 0.6), Skewed decision distribution (real_ratio: 0.00, fake_ratio: 1.00 > 0.9)
+   Tanay Jounjat: Low F1 score (0.19 < 0.6)
+   Mahek Panjabi: Low F1 score (0.00 < 0.6)
+   Fathima Sainudheen: Low F1 score (0.10 < 0.6)
+   loboangel moses: Low F1 score (0.15 < 0.6)
+   Bhumii Sharma: Low F1 score (0.20 < 0.6)
+   Meet Shah: Low F1 score (0.17 < 0.6)
+   Krishi Chawla: Low F1 score (0.26 < 0.6)
+   Rishita Godre: Low F1 score (0.16 < 0.6)
+   Prem Gujar: Low F1 score (0.14 < 0.6)
+   Sakshi Dahiphale: Low F1 score (0.34 < 0.6)
+   Kruti Anegundi: Low F1 score (0.15 < 0.6)
+   Priyanshi Agrawal: Low F1 score (0.10 < 0.6)
+   Bikram Badh: Low F1 score (0.48 < 0.6)
+   Japtej Singh: Low F1 score (0.36 < 0.6)
+   Videesha Sawane: Low F1 score (0.27 < 0.6)
+   Devyani. Dangat: Low F1 score (0.38 < 0.6)
+   Jasleen Kaur: Low F1 score (0.13 < 0.6)
+   Sanjana Sapkal: Low F1 score (0.20 < 0.6)
+   Naman Jaswani: Low F1 score (0.51 < 0.6)
+   Siddharth Bose: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.6)
+   yashi yashi: Low F1 score (0.27 < 0.6)
+   Aayushri Srivastava: Low F1 score (0.00 < 0.6)
+   Soniya Premchandani: Insufficient evaluations (0 < 5), Low F1 score (0.00 < 0.6)
+   Ritu Ganthade: Z-score outlier (F1: 0.61 < threshold: 0.62)
+
+============================================================
+

@@ -2,11 +2,11 @@ import pymongo
 import csv
 from urllib.parse import quote_plus
 
-# MongoDB connection details
+# M# MongoDB connection details
 username = "sambhav22435"
-password = quote_plus("Possible@2003")
-mongo_url = f"mongodb+srv://{username}:{password}@ttc.swhs7.mongodb.net/"
-database_name = "Turing"
+password = quote_plus("Sambhav@Possible@2003")  # Escapes special characters
+mongo_url = f"mongodb+srv://{username}:{password}@ttc.qg2bq.mongodb.net/"
+database_name = "Turing"  # Use the correct casing
 collection_name = "ttc"
 
 # Connect to MongoDB
@@ -61,7 +61,7 @@ for index, recipe in enumerate(collection.find(), start=1):
 keys = ["Sno", "title", "total_ingredients", "in_instructions", "in_ingredients"]
 
 # Write to CSV with UTF-8 encoding
-with open("ingredients_stats.csv", "w", newline="", encoding="utf-8") as file:
+with open("ingredients_stats_after_deleting.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.DictWriter(file, fieldnames=keys)
     writer.writeheader()
     writer.writerows(stats)
