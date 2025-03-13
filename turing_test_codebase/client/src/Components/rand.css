@@ -1,0 +1,167 @@
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sansation');
+
+body, html {
+    font-family: 'Sansation', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  
+  #outer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Recipe title */
+  .recp_name {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .recp_name p {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #3498db;
+  }
+  
+  /* Content container */
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  
+  /* Ingredients and Instructions sections */
+  .ingredients, .instructions {
+    flex: 1;
+    background-color: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ingredients h1, .instructions h1 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .ingredients ul, .instructions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ingredients li, .instructions li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .ingredients li:before, .instructions li:before {
+    content: '•';
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  /* Evaluation section */
+  .evaluate {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #e8f4fd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .evaluate h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .evaluate_upper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  #sbt, #skp {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #sbt {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  #skp {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  #sbt:hover, #skp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+    
+    .ingredients, .instructions {
+      margin-bottom: 1rem;
+    }
+    
+    .recp_name p {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Animation for loading state */
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  .loading {
+    animation: pulse 1.5s infinite;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+  }
+  
+  /* Error state */
+  .error {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #fadbd8;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }

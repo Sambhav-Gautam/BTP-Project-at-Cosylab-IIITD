@@ -1,0 +1,139 @@
+/* header.css */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sansation');
+
+
+header {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px 30px; /* Adjust padding to reduce height */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  margin-bottom:40px;
+}
+
+nav {
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Space out left and right */
+  align-items: center; /* Center items vertically */
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.left {
+  display: flex; /* Use Flexbox for left items */
+  align-items: center; /* Center vertically */
+}
+
+.left h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 32px; /* Increase font size for a larger header */
+}
+
+.right {
+  display: flex; /* Use Flexbox for right items */
+  align-items: center; /* Center list items vertically */
+}
+
+.right ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use Flexbox for list items */
+  align-items: center; /* Center list items vertically */
+}
+
+.right li {
+  margin-left: 20px; /* Space between list items */
+  position: relative; /* Position for dropdown */
+}
+
+.right img {
+  margin-left: 10px; /* Add some space to the image */
+  vertical-align: middle; /* Align the image with text */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.right a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Text color */
+}
+
+.right a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+.logo-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the same text color as the surrounding text */
+}
+
+.logo-link:hover {
+  cursor: pointer; /* Change cursor to pointer when hovered */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: absolute; /* Position the dropdown */
+  top: 70px; /* Position below the image */
+  right: 0; /* Align to the right */
+  background-color: white; /* White background for dropdown */
+  border: 1px solid #ddd; /* Border around dropdown */
+  border-radius: 4px; /* Slight rounding of corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  z-index: 10; /* Ensure dropdown is above other elements */
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack dropdown items vertically */
+  width: 100%; /* Full width for dropdown */
+  max-width: 150px; /* Limit the max width to avoid overflow */
+  overflow: hidden; /* Hide overflow if any */
+}
+
+.dropdown li {
+  padding: 10px 15px; /* Spacing for dropdown items */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown li:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: row; /* Keep items in a row */
+      justify-content: space-between; /* Space out left and right */
+  }
+
+  .left {
+      margin-right: auto; /* Ensure logo is on the left */
+  }
+
+  .right {
+      margin-left: auto; /* Ensure profile is on the right */
+  }
+
+  .right ul {
+      flex-direction: row; /* Keep list items in a row */
+      align-items: center; /* Align items vertically */
+  }
+
+  .right li {
+      margin-left: 10px; /* Adjust spacing for mobile */
+  }
+
+  .dropdown {
+      width: auto; /* Set to auto to avoid cutting off */
+      max-width: 80vw; /* Use a percentage width for better visibility */
+      right: 0; /* Align dropdown to the right */
+      z-index: 20; /* Ensure it is above other elements */
+      top: 75px; /* Adjust position slightly to avoid overlap */
+  }
+}
+
+
+
+/* Increase dropdown size for PC only */
+@media (min-width: 1024px) { /* Adjust breakpoint as needed */
+  .dropdown {
+      max-width: 200px; /* Increased size for desktop */
+      width: auto; /* Adjust to avoid stretching */
+  }
+}
